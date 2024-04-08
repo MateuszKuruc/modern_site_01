@@ -1,3 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ServicesContent from "../components/Services/ServicesContent.astro";
+import BannerInterior from "../components/BannerInterior.astro";
+import Sbs from "../components/Sbs.astro";
 ---
+
+<MainLayout title="Photo and Print">
+    <BannerInterior title="Photo and Print" url="photo-and-print" img="/assets/photo-print.jpg" />
+    <ServicesContent />
+    <Sbs />
+</MainLayout>
