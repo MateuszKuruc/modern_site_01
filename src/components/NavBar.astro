@@ -24,7 +24,7 @@
     </div>
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="" class="cs-logo cs-bottom-logo" aria-label="back to home">
+        <a href="/" class="cs-logo cs-bottom-logo" aria-label="back to home">
             <!--White Logo-->
             <!--This nav has an on scroll effect to rotate the images to swap the light version with the dark version so it shows up on the white background that animates behind the nav-->
             <img class="cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
@@ -45,12 +45,22 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="#hero" class="cs-li-link cs-active">
+                        <a href="/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/"}
+                            ]}
+                        >
                             Home
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="/about" class="cs-li-link">
+                        <a href="/about/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/about/"}
+                            ]}
+                        >
                             About
                         </a>
                     </li>
@@ -82,12 +92,22 @@
                         </ul>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/portfolio/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/portfolio/"}
+                            ]}
+                        >
                             Portfolio
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/contact/" 
+                        class:list={[
+                            "cs-li-link",
+                            { "cs-active": Astro.url.pathname === "/contact/"}
+                            ]}
+                        >
                             Contact
                         </a>
                     </li>
@@ -790,6 +810,8 @@ html {
     }
     body.scroll #cs-navigation .cs-li-link {
         color: var(--headerColor);
+        font-size: large;
+        font-weight: 600;
     }
     body.scroll #cs-navigation .cs-li-link.cs-active {
         color: var(--primary);
@@ -979,7 +1001,7 @@ html {
     }
     #cs-navigation .cs-li-link {
         /* 14px - 16px */
-        font-size: clamp(0.875rem, 0.6vw, 1rem);
+        font-size: clamp(0.875rem, 1vw, 2rem);
         line-height: 1.5rem;
         text-decoration: none;
         margin: 0;
