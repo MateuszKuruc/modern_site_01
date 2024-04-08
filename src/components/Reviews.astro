@@ -2,7 +2,7 @@
 <!--                   Reviews                    -->
 <!-- ============================================ -->
 
-<section id="reviews-1396">
+<section id="reviews">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Testimonials</span>
@@ -68,7 +68,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews-1396 {
+    #reviews {
         /* centers the button */
         text-align: center;
         padding: var(--sectionPadding);
@@ -77,7 +77,7 @@
         position: relative;
         z-index: 1;
     }
-    #reviews-1396 .cs-container {
+    #reviews .cs-container {
         width: 100%;
         /* changes to 1024px at tablet */
         max-width: 36.5rem;
@@ -88,7 +88,7 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #reviews-1396 .cs-content {
+    #reviews .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -98,11 +98,11 @@
         align-items: center;
     }
 
-    #reviews-1396 .cs-title {
+    #reviews .cs-title {
         max-width: 20ch;
         margin: 0;
     }
-    #reviews-1396 .cs-card-group {
+    #reviews .cs-card-group {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -111,7 +111,7 @@
         /* 16px - 20px */
         gap: clamp(1rem, 2.5vw, 1.15rem);
     }
-    #reviews-1396 .cs-item {
+    #reviews .cs-item {
         list-style: none;
         text-align: left;
         /* 20px - 60px */
@@ -131,7 +131,7 @@
         position: relative;
         z-index: 1;
     }
-    #reviews-1396 .cs-item:before {
+    #reviews .cs-item:before {
         /* background color */
         content: "";
         width: 100%;
@@ -146,7 +146,7 @@
         /* prevents the mouse from interacting it */
         pointer-events: none;
     }
-    #reviews-1396 .cs-quote {
+    #reviews .cs-quote {
         /* 72px - 120px */
         width: clamp(4.5rem, 10vw, 7.5rem);
         height: auto;
@@ -154,7 +154,7 @@
         margin-bottom: clamp(2rem, 6vw, 4rem);
         display: block;
     }
-    #reviews-1396 .cs-item-text {
+    #reviews .cs-item-text {
         /* 16px - 25px */
         font-size: clamp(1rem, 2.6vw, 1.5625rem);
         line-height: 1.2em;
@@ -164,7 +164,7 @@
         margin-bottom: clamp(1.5rem, 6vw, 4rem);
         color: var(--bodyTextColor);
     }
-    #reviews-1396 .cs-flex-group {
+    #reviews .cs-flex-group {
         /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
         margin-top: auto;
         display: flex;
@@ -173,7 +173,7 @@
         /* 8px - 24px */
         gap: clamp(0.8rem, 1.5vw, 1rem);
     }
-    #reviews-1396 .cs-profile {
+    #reviews .cs-profile {
         /* 40px - 52px */
         width: clamp(2.5rem, 5vw, 3.25rem);
         height: clamp(2.5rem, 5vw, 3.25rem);
@@ -186,7 +186,7 @@
         position: relative;
         display: block;
     }
-    #reviews-1396 .cs-profile img {
+    #reviews .cs-profile img {
         position: absolute;
         top: 0;
         left: 0;
@@ -195,7 +195,7 @@
         /* makes the image behave like a background image */
         object-fit: cover;
     }
-    #reviews-1396 .cs-name {
+    #reviews .cs-name {
         /* 16px - 25px */
         font-size: clamp(1rem, 2.5vw, 1.5625rem);
         line-height: 1.2em;
@@ -204,7 +204,7 @@
         color: var(--headerColor);
         display: block;
     }
-    #reviews-1396 .cs-job {
+    #reviews .cs-job {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
@@ -216,10 +216,10 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #reviews-1396 .cs-container {
+    #reviews .cs-container {
         max-width: 80rem;
     }
-    #reviews-1396 .cs-item {
+    #reviews .cs-item {
         grid-column: span 4;
     }
 }
