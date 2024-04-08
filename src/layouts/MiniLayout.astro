@@ -1,8 +1,11 @@
 ---
 import NavBar from '../components/NavBar.astro';
 import Footer from "../components/Footer.astro"
-import Map from "../components/Map.astro"
-import Reviews from "../components/Reviews.astro"
+import Faq from '../components/Faq.astro';
+import CTA from "../components/CTA.astro"
+import Pricing from '../components/Pricing.astro';
+import Whyus from "../components/Whyus.astro"
+import RecentPosts from '../components/RecentPosts.astro';
 
 interface Props {
 	title: string;
@@ -42,17 +45,17 @@ const { title } = Astro.props;
 	<body>
         <NavBar />
 		<slot />
-        <Reviews />
-        <Map />
+    <CTA />
+    <RecentPosts />
         <Footer />
 	</body>
 </html>
 <style is:global>
 :root {
-    --primary: #780000;
-    --primaryLight: #ffba43;
+    --primary: #7678ed;
+    --primaryLight: #3d348b;
     --secondary: #f5e2bb;
-    --secondaryLight: #ffba43;
+    --secondaryLight: #f7b801;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
